@@ -1,0 +1,120 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Very-light-gray);
+}
+
+.container {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.col {
+  padding: 2rem;
+}
+.orange {
+  background-color: var(--bright-orange);
+  border-radius: 0.5rem 0.5rem 0 0;
+  -webkit-border-radius: 0.5rem 0.5rem 0 0;
+  -moz-border-radius: 0.5rem 0.5rem 0 0;
+  -ms-border-radius: 0.5rem 0.5rem 0 0;
+  -o-border-radius: 0.5rem 0.5rem 0 0;
+}
+.orange button {
+  color: var(--bright-orange);
+}
+.dark-cyan {
+  background-color: var(--very-dark-cyan);
+}
+.dark-cyan button {
+  color: var(--very-dark-cyan);
+}
+.light-cyan {
+  background-color: var(--dark-cyan);
+  border-radius: 0 0 0.5rem 0.5rem;
+  -webkit-border-radius: 0 0 0.5rem 0.5rem;
+  -moz-border-radius: 0 0 0.5rem 0.5rem;
+  -ms-border-radius: 0 0 0.5rem 0.5rem;
+  -o-border-radius: 0 0 0.5rem 0.5rem;
+}
+.light-cyan button {
+  color: var(--dark-cyan);
+}
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--Very-light-gray);
+  padding: 2rem 0;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparent-white);
+  padding-bottom: 1rem;
+  line-height: 1.5rem;
+}
+
+button {
+  background-color: var(--transparent-white);
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border-radius: 3rem;
+}
+button:hover {
+  border: 2px solid var(--transparent-white);
+  color: var(--transparent-white);
+  background-color: transparent;
+}
+@media only screen and (min-width: 1000px) {
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container{
+      width: 65%;
+  }
+  .row {
+    flex-direction: row;
+  }
+  .col {
+    padding: 3rem 3rem;
+    position: relative;
+  }
+  .orange {
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+  .light-cyan {
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+ p{
+     margin-bottom: 3rem;
+ }
+  
+}
